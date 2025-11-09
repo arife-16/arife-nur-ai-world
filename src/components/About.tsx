@@ -27,27 +27,16 @@ export const About = () => {
                 </div>
                 <div className="space-y-4 text-foreground/80 leading-relaxed">
                   <p>
-                    As dawn broke, drawing a sharp line across the horizon, I stood by the window of my classroom, 
-                    recalling a memory of another window, in another classroom. That same window had once framed 
-                    the sky I used to watch as a child, when my family and I were displaced and sheltered in a 
-                    school building.
+                    I am a researcher and developer driven to find the "mathematical language" hidden within the world's most complex systems. My work focuses on applying rigorous computational methods to solve deep biological and human-centric problems.
                   </p>
                   <p>
-                    In the quiet of that room, I could imagine a perfectly peaceful world. On the blackboard, 
-                    there was a date carved in the Hijri calendar: 13 Rabiʿ al-Awwal 1434. I picked up a piece 
-                    of chalk and began rewriting the numbers, tracing their meanings. The "14" in 1434 marked 
-                    the year I stood in—2014; "3" counted the years since the war began in 2011; and "4" was 
-                    my age when it started.
+                    My autistic mind was overwhelmed by the noise and unpredictability around me. Numbers and patterns became a way to make sense of it. While the world outside changed without warning, numbers followed rules I could trust. Writing on a blackboard was a small way to reclaim order when nothing else felt stable.
                   </p>
                   <p>
-                    My autistic mind was overwhelmed by the noise and unpredictability around me. Numbers and 
-                    patterns became a way to make sense of it. While the world outside changed without warning, 
-                    numbers followed rules I could trust. Writing on that board was a small way to reclaim order 
-                    when nothing else felt stable.
+                    My core mission is to build tools that move beyond broad, "crude" labels to see the individual. This passion stems from my own experience and the conviction that to truly help people, we must first understand their unique biology.
                   </p>
-                  <p className="text-primary font-medium">
-                    That chalkboard was my first experiment in reducing a chaotic world into something my brain 
-                    could handle. As I grew older, the chalk became code.
+                  <p>
+                    When I am not modeling brain connectivity, I am an active Qiskit Advocate and IBM QAMP mentee, exploring how quantum algorithms can solve complex optimization problems. I also have a deep interest in philosophy and the power of language, from formal logic to Arabic poetry.
                   </p>
                 </div>
               </div>

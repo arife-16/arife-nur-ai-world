@@ -1,6 +1,7 @@
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
-import { Brain, Atom, ExternalLink, ChevronRight } from "lucide-react";
+import { Brain, Atom, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import asdProject from "@/assets/asd-project.jpg";
 import quantumProject from "@/assets/quantum-project.jpg";
 
@@ -89,19 +90,15 @@ export const Projects = () => {
                   </span>
                 </div>
 
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="w-full border-accent/50 text-accent hover:bg-accent/10 group/btn mt-4"
                   asChild
                 >
-                  <a 
-                    href="https://github.com/arife-16" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
+                  <Link to="/projects/asd-biomarker">
                     View Research
-                    <ExternalLink className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
-                  </a>
+                    <ChevronRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
+                  </Link>
                 </Button>
               </div>
             </Card>
@@ -174,19 +171,15 @@ export const Projects = () => {
                   </span>
                 </div>
 
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="w-full border-secondary/50 text-secondary hover:bg-secondary/10 group/btn mt-4"
                   asChild
                 >
-                  <a 
-                    href="https://github.com/arife-16" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
+                  <Link to="/projects/qamp">
                     View Project
-                    <ExternalLink className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
-                  </a>
+                    <ChevronRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
+                  </Link>
                 </Button>
               </div>
             </Card>

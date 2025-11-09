@@ -50,8 +50,7 @@ export const Hero = () => {
           </div>
 
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            High school student bridging quantum algorithms, machine learning, and neuroscience
-            to develop objective autism biomarkers and solve complex optimization problems.
+            I study how structure emerges in complex worlds and build tools that make uncertainty useful. I combine rigorous engineering with a humanitarian lens.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center items-center pt-4">
