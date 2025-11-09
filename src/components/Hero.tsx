@@ -70,6 +70,14 @@ export const Hero = () => {
             >
               About Me
             </Button>
+            <Button 
+              size="lg"
+              variant="outline"
+              onClick={() => window.location.href = '/blog'}
+              className="border-accent/50 text-foreground hover:bg-accent/10"
+            >
+              Read Blog
+            </Button>
           </div>
 
           <div className="flex gap-4 justify-center pt-4">
