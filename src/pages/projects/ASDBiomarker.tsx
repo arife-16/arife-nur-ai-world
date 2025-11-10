@@ -60,7 +60,7 @@ const ASDBiomarker = () => {
           </Card>
 
           <Card className="p-6 space-y-3">
-            <h2 className="text-2xl font-semibold">2. Feature Engineering (The "Vocabulary")</h2>
+            <h2 className="text-2xl font-semibold">2. Feature Engineering </h2>
             <p className="text-foreground/80">Raw brain signals are translated into a rich mathematical vocabulary using tools such as the Brain Connectivity Toolbox (BCT). We extract meaningful features including:</p>
             <ul className="list-disc pl-6 space-y-1 text-foreground/80">
               <li>fMRI Nodal Metrics: nodal strength, clustering coefficient, participation (hub status)</li>
@@ -69,7 +69,7 @@ const ASDBiomarker = () => {
           </Card>
 
           <Card className="p-6 space-y-3">
-            <h2 className="text-2xl font-semibold">3. Normative Model Training (The "Grammar")</h2>
+            <h2 className="text-2xl font-semibold">3. Normative Model Training </h2>
             <p className="text-foreground/80">We train statistical models on thousands of typically developing subjects to build a flexible normative model that accounts for key covariates:</p>
             <ul className="list-disc pl-6 space-y-1 text-foreground/80">
               <li>Gaussian Process Regression or GAMLSS</li>
@@ -78,15 +78,15 @@ const ASDBiomarker = () => {
           </Card>
 
           <Card className="p-6 space-y-3">
-            <h2 className="text-2xl font-semibold">4. Individual Deviation Map Generation (The "Sentence")</h2>
+            <h2 className="text-2xl font-semibold">4. Individual Deviation Map Generation </h2>
             <p className="text-foreground/80">For any individual, the normative model predicts expected connectivity. We compare this expectation to their actual brain data to compute Z-scores, producing an interpretable Deviation Map that pinpoints hyper- or hypo-connected regions.</p>
           </Card>
 
           <Card className="p-6 space-y-3">
-            <h2 className="text-2xl font-semibold">5. Subtype Discovery & Integration (The "Discovery")</h2>
+            <h2 className="text-2xl font-semibold">5. Subtype Discovery & Integration </h2>
             <p className="text-foreground/80">We apply unsupervised clustering on ASD deviation maps to discover data-driven neuro-subtypes and integrate modalities:</p>
             <ul className="list-disc pl-6 space-y-1 text-foreground/80">
-              <li>Unsupervised clustering (e.g., k-means)</li>
+              <li>Unsupervised clustering </li>
               <li>Fusion of fMRI and EEG for a multimodal model</li>
             </ul>
           </Card>
