@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // Set correct base for GitHub Pages project site
+  // In dev, Vite serves at '/'; in production builds, use repo name.
+  base: mode === "development" ? "/" : "/arife-nur-ai-world/",
   plugins: [react()],
   resolve: {
     alias: {
