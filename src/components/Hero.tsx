@@ -1,8 +1,10 @@
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import heroBackground from "@/assets/hero-background.jpg";
 
 export const Hero = () => {
+  const navigate = useNavigate();
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -72,7 +74,7 @@ export const Hero = () => {
             <Button 
               size="lg"
               variant="outline"
-              onClick={() => window.location.href = '/blog'}
+              onClick={() => navigate('/blog')}
               className="border-accent/50 text-foreground hover:bg-accent/10"
             >
               Read Blog
