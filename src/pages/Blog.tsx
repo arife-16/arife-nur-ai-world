@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 interface BlogPost {
   id: string;
@@ -97,16 +97,7 @@ const Blog = () => {
                     <Badge variant="secondary" className="font-mono text-xs">
                       {post.category}
                     </Badge>
-                    <div className="flex items-center text-xs text-muted-foreground gap-3">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        {post.readTime}
-                      </span>
-                    </div>
+                    {/* Date and read time removed as requested */}
                   </div>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">
                     {post.title}

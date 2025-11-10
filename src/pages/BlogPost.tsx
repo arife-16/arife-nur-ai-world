@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
+import { ArrowLeft, Share2 } from "lucide-react";
 import EntropyViz from "@/components/EntropyViz";
 import { useToast } from "@/hooks/use-toast";
 import qubo1 from "../../QUBO/1.png";
@@ -228,21 +228,7 @@ const BlogPost = () => {
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
                 {post.title}
               </h1>
-              <div className="flex items-center justify-between flex-wrap gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-4">
-                  <span className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    {new Date(post.date).toLocaleDateString('en-US', { 
-                      month: 'long', 
-                      day: 'numeric', 
-                      year: 'numeric' 
-                    })}
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Clock className="w-4 h-4" />
-                    {post.readTime}
-                  </span>
-                </div>
+              <div className="flex items-center justify-end flex-wrap gap-4 text-sm text-muted-foreground">
                 <Button 
                   variant="outline" 
                   size="sm"

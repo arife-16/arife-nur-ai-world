@@ -125,12 +125,12 @@ export const Projects = () => {
                     Quantum Portfolio Optimization
                   </h3>
                   <p className="text-sm text-muted-foreground font-mono">
-                    Quantum Computing • Finance • QAOA
+                    Quantum Computing • Finance • NISQ
                   </p>
                 </div>
 
                 <p className="text-foreground/80 leading-relaxed">
-                  project aims to implement a quantum approach to this classic financial problem by framing it as a combinatorial optimization task and solving it using the Quantum Approximate Optimization Algorithm (QAOA). We will focus on the mean-variance optimization model, a cornerstone of computational finance.
+                  A project aims to implement a quantum approach to the Mean-Variance porfolio optimization problem by framing it as a combinatorial optimization task and solving it using the Quantum Approximate Optimization Algorithm (QAOA).
                 </p>
 
                 <div className="space-y-3">
