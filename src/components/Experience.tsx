@@ -58,6 +58,19 @@ const experiences: ExperienceItem[] = [
       "Led international team developing EduBeyond, an AI-powered AP Physics tutor (RAG application)"
     ],
     color: "warm"
+  },
+  {
+    organization: "WISER & WOMANIUM",
+    role: "Quantum Computing Scholar",
+    period: "2025",
+    location: "Remote",
+    description: [
+      "Intensive, multi-module program focused on theory and application of quantum algorithms, offered in collaboration with QWorld, PennyLane, and Xanadu",
+      "Completed advanced curriculum covering quantum foundations, algorithms for PDEs and nonlinear problems, block encoding (LCU), and Hamiltonian simulation",
+      "Earned certificates from WISER, QWorld, PennyLane, and Xanadu",
+      "Vanguard capstone project: used binary decision variables and quadratic objectives to simulate realistic trading scenarios"
+    ],
+    color: "accent"
   }
 ];
 
@@ -82,6 +95,14 @@ const colorClasses = {
     text: "text-warm",
     bg: "bg-warm/10"
   }
+};
+
+// Explicit interactive border classes so Tailwind includes variants for all colors
+const interactiveBorderClasses = {
+  primary: "hover:border-primary/50 focus:border-primary/50 active:border-primary/50",
+  secondary: "hover:border-secondary/50 focus:border-secondary/50 active:border-secondary/50",
+  accent: "hover:border-accent/50 focus:border-accent/50 active:border-accent/50",
+  warm: "hover:border-warm/50 focus:border-warm/50 active:border-warm/50",
 };
 
 export const Experience = () => {
@@ -120,8 +141,8 @@ export const Experience = () => {
                     <div className={`absolute left-0 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full ${colors.bg} border-2 ${colors.border} z-10`}></div>
 
                     {/* Content */}
-                    <div className={`flex-1 ${isEven ? "md:text-right md:pr-12" : "md:pl-12"}`}>
-                      <Card className={`p-6 bg-card border-border hover:${colors.border} transition-all duration-300 ml-8 md:ml-0`}>
+                    <div className={`flex-1 ${isEven ? "md:text-left md:pr-12" : "md:pl-12"}`}>
+                      <Card className={`p-6 bg-card border-border ${interactiveBorderClasses[exp.color]} transition-all duration-300 ml-8 md:ml-0`}>
                         <div className="space-y-4">
                           <div>
                             <h3 className={`text-xl font-bold ${colors.text}`}>

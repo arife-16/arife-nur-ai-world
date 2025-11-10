@@ -1,0 +1,123 @@
+We’ve all heard and used the word “information” colloquially: 
+it is any observation, data, or knowledge that reduces uncertainty.
+“I can’t make a decision yet, I need more information.”
+
+For a moment, let’s examine a counterfeit coin puzzle: the goal of this puzzle is to find which (if any) coins in our possession are counterfeit. With one suspicious coin, and no observation or other data to support its authenticity, we are uncertain whether or not it is counterfeit.
+
+how many possible outcomes are there? obviously there are two possibilities: either the coin is counterfeit, or it isn’t. Other than the trivial case of one possibility (and therefore no uncertainty), an event with two possibilities is the lowest possible level of uncertainty. 
+
+The amount of information it takes to resolve this smallest level of uncertainty is the elementary unit of information: a bit. The information that you would gain by weighing the coin and determining whether it is counterfeit or not would be of information. This is the same amount of information you get from the answer to a yes or no question, or from flipping a coin.
+
+
+The more uncertain an event, the more information is required to resolve that uncertainty. Consider the same counterfeit coin puzzle, but this time we have ten coins, any of which may be counterfeit. this time the total outcome possibilities is 2^10=1024. 
+
+There’s more uncertainty in the counterfeit coin puzzle when there are ten coins in the mix. In fact, by adding nine more coins, we’ve increased the number of possible outcomes by a huge factor of 512.
+
+How much information do we need to resolve this uncertainty? Is it 512 times as much information? Well, we know that the elementary unit of information is the bit, which is the amount of information contained in the answer to a yes or no question.
+
+One yes or no question—one bit of information—is enough to reduce the number of outcomes for one coin from 2  to 1.  Whether the coin is counterfeit or not, the total number of outcomes for the counterfeit coin puzzle then drops from 2^10=1024 to 2^9=512.
+
+With 2  possible outcomes, only 1 bit  (or one yes or no question worth) of information is required to resolve the uncertainty. And with 1024 possible outcomes, 10 bits of information are required to resolve that uncertainty.
+
+
+From these two cases, we can see that the number of possible outcomes n is scaling exponentially with respect to the number of bits:
+
+n = 2^bits
+
+n=2bit
+
+By taking the logarithm of both sides, we come to the formal definition of information: it scales with the logarithm of the number of possibilities. That is, for 'n' possible outcomes, the information required to resolve the uncertainty is:
+
+Information = log₂(n) bits
+
+
+
+Information Theory: The Mathematics of Uncertainty
+
+Information theory, pioneered by Claude Shannon in the mid-20th century, provides a mathematical framework for understanding and quantifying information. At its core, information theory revolves around the concept of uncertainty and how it can be reduced through the acquisition of new data.
+While we commonly think of bits as 1s and 0s in computer systems, their significance runs deeper. A single bit can answer one yes/no question, reducing uncertainty by half. For example, if you're thinking of a number between 1 and 8, I can determine it with exactly 3 bits of information through binary search:
+
+
+Is it greater than 4? (First bit)
+Among the remaining possibilities, is it greater than the midpoint? (Second bit)
+Of the two remaining numbers, is it the larger one? (Third bit)
+Entropy: Measuring Uncertainity
+The Story of Shannon's Entropy
+Imagine you're playing a game of "20 Questions" with a friend. Your friend is thinking of an animal, and you need to guess it by asking yes/no questions. How can we measure how "surprising" or "informative" each answer is?
+
+Let's think about it:
+
+If your friend tells you "It's a mammal" when you're pretty sure it's a mammal anyway (say, 90% sure), that's not very informative, But if they tell you "It can fly" when you thought it was probably a land animal, that's very informative!
+
+As it is in our example, Claude Shannon realized that the information content of an event should have these properties:
+
+Rare events should give us more information than common ones
+Independent events should add their information
+The measure should be continuous and smooth
+Following these conclusions, the famous entropy formula has emerged.
+The Birth of the Formula
+The binary entropy function, denoted as H(p), measures the uncertainty or randomness associated with a binary random variable. How the famous entropy formula emerges naturally?
+
+Start with Probability
+Consider an event with probability p
+The less likely it is (smaller p), the more information it should contain
+The Logarithm Magic
+If we want dependent events to add their information, we need logarithms
+Why? Because log(ab) = log(a) + log(b)
+The Negative Sign
+Since probabilities are between 0 and 1, their logarithms are negative
+We want information to be positive, so we add a negative sign
+Hence: Information = -log₂(p)
+The Average Surprise
+Entropy is just the average information over all possible outcomes
+For each outcome with probability p, we multiply its information [-log₂(p)] by its probability (p)
+Sum these up, and voilà! H = -∑ p log₂(p)
+ As we learn, entropy decreases, and each bit of information we gain reduces uncertainty by a specific amount. High entropy means we need more information to make good decisions. on the other hand, low entropy means we're more certain about what to do.
+ In basic terms, entropy is the nature's measure of "surprisingness". Just as a predictable movie is boring, a predictable information source has low entropy. The more unpredictable something is, the higher its entropy - and the more interesting each new piece of information becomes!
+
+The Maximum Entropy Principle: Being Smartly Clueless! 
+
+The Maximum Entropy Principle (MaxEnt) is one of the most profound ideas in information theory, serving as a bridge between probability theory and rational inference. It tells us something remarkable: when we lack information, the best strategy is to choose the probability distribution that:
+
+Maximizes entropy (uncertainty)
+Remains consistent with what we do know
+This might seem counterintuitive - why maximize uncertainty? The answer lies in intellectual honesty: we want to be as uncertain as possible while still respecting our constraints. This prevents us from making hidden assumptions or claiming more knowledge than we actually have.
+Imagine you're a detective who's surprisingly good at their job by admitting what you don't know! That's essentially what the Maximum Entropy Principle is - it's the scientific way of saying "I don't know, but here's what I do know, and I'm going to be super honest about everything else!"
+
+The Birthday Party Mystery 
+Let's say you're planning a surprise party and trying to guess how many people will show up. Here's what you know:
+
+You invited 50 people
+On average, about 70% of people show up to parties
+The venue fits 45 people max
+What should you expect? Maximum Entropy says: "Be as unsure as possible while respecting these facts!" It's like planning for chaos while knowing the boundaries of that chaos.
+
+Setting the Boundaries 
+
+Minimum: 0 people (theoretically possible, though sad!)
+
+Maximum: 45 people (venue limit)
+
+Expected average: 35 people (70% of 50)
+
+The MaxEnt Solution: Instead of assuming a normal distribution (bell curve) or any other specific pattern, MaxEnt tells us to:
+
+Use an exponential-like distribution that:
+
+-Has an average of 35 people
+
+-Never predicts more than 45 people
+
+-Maintains maximum uncertainty everywhere else!
+
+The Three Rules of Professional Uncertainty:
+
+Don't make stuff up
+Use what you know
+For everything else - embrace the chaos (in a mathematical way!)
+Conclusion
+Information theory provides a rigorous mathematical framework for understanding uncertainty and information. Its deep connections with Bayesian probability theory make it an essential tool in modern data science, machine learning, and communications. Through the concept of entropy, we can quantify uncertainty and measure the information content of data, leading to practical applications across numerous fields.
+
+The beauty of information theory lies in its ability to bridge the gap between abstract mathematical concepts and practical problems in data processing and decision making. As we continue to live in an increasingly data-driven world, understanding these fundamental principles becomes ever more crucial.
+
+Remember, all we should do is making sense of uncertainty!!

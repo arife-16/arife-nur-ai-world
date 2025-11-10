@@ -16,58 +16,40 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    id: "quantum-annealing-portfolio",
-    title: "Quantum Annealing for Portfolio Optimization: A Deep Dive",
-    excerpt: "Exploring how quantum annealing algorithms can revolutionize financial portfolio optimization by solving complex combinatorial problems that are intractable for classical computers.",
-    category: "Quantum Computing",
-    date: "2025-01-15",
-    readTime: "8 min read",
-    tags: ["Quantum Computing", "Finance", "Optimization"]
-  },
-  {
-    id: "asd-biomarkers-fmri",
-    title: "Developing Objective ASD Biomarkers Using fMRI Data",
-    excerpt: "A comprehensive look at our pipeline for identifying autism spectrum disorder biomarkers through functional MRI analysis and normative modeling techniques.",
+    id: "neurodx-teknofest",
+    title: "NeuroDx: TEKNOFEST Finalist Presentation (9th Place)",
+    excerpt: "Showcase of my TEKNOFEST International Science and Tech Festival finalist presentation; awarded 9th place.",
     category: "Neuroscience",
-    date: "2025-01-08",
-    readTime: "10 min read",
-    tags: ["Neuroscience", "Machine Learning", "Healthcare"]
+    date: "2025-01-20",
+    readTime: "3 min view",
+    tags: ["TEKNOFEST", "NeuroDx", "Presentation", "Finalist"]
   },
   {
-    id: "normative-modeling-intro",
-    title: "Introduction to Normative Modeling in Neuroimaging",
-    excerpt: "Understanding how normative modeling provides a statistical framework for identifying individual deviations from typical brain development patterns.",
-    category: "Tutorial",
-    date: "2024-12-20",
-    readTime: "12 min read",
-    tags: ["Neuroscience", "Statistics", "Tutorial"]
-  },
-  {
-    id: "qaoa-explained",
-    title: "QAOA: Bridging Classical and Quantum Optimization",
-    excerpt: "Breaking down the Quantum Approximate Optimization Algorithm and how it combines quantum superposition with classical optimization techniques.",
+    id: "qubo-posters",
+    title: "QUBO Formulation: Poster Gallery",
+    excerpt: "Three visual posters summarizing QUBO concepts and quantum methods.",
     category: "Quantum Computing",
-    date: "2024-12-10",
-    readTime: "15 min read",
-    tags: ["Quantum Computing", "Algorithms", "Tutorial"]
+    date: "2025-01-18",
+    readTime: "2 min view",
+    tags: ["QUBO", "Quantum", "Posters"]
   },
   {
     id: "research-journey",
     title: "My Journey into Quantum Computing and Neuroscience",
-    excerpt: "Reflecting on how my curiosity about the brain and quantum mechanics led me to explore the intersection of these fascinating fields at age 16.",
+    excerpt: "A personal story of finding order in complexity and how it led me to quantum computing and neuroscience.",
     category: "Personal",
     date: "2024-11-25",
     readTime: "6 min read",
     tags: ["Personal", "Research", "Career"]
   },
   {
-    id: "eeg-preprocessing",
-    title: "EEG Data Preprocessing: Best Practices and Pitfalls",
-    excerpt: "A practical guide to cleaning and preparing EEG data for machine learning applications, covering artifact removal, filtering, and feature extraction.",
-    category: "Tutorial",
-    date: "2024-11-15",
-    readTime: "11 min read",
-    tags: ["Neuroscience", "Data Science", "Tutorial"]
+    id: "information-theory",
+    title: "Information Theory: The Mathematics of Uncertainty",
+    excerpt: "An intuitive walkthrough of bits, entropy, and the MaxEnt principle.",
+    category: "Information Theory",
+    date: "2025-11-10",
+    readTime: "7 min read",
+    tags: ["Entropy", "Shannon", "Probability", "MaxEnt"]
   }
 ];
 
