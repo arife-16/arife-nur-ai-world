@@ -1,6 +1,6 @@
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
-import { Mail, Github, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -44,17 +44,10 @@ export const Contact = () => {
                   </a>
 
                   <div className="flex items-center gap-3 text-foreground/80">
-                    <div className="p-2 bg-accent/10 rounded-lg">
-                      <Phone className="w-5 h-5 text-accent" />
-                    </div>
-                    <span>(+90) 531 369 7896</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 text-foreground/80">
                     <div className="p-2 bg-secondary/10 rounded-lg">
                       <MapPin className="w-5 h-5 text-secondary" />
                     </div>
-                    <span>Gaziantep, Türkiye</span>
+                    <span>Türkiye</span>
                   </div>
                 </div>
               </div>

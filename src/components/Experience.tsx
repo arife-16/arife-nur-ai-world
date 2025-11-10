@@ -5,17 +5,16 @@ interface ExperienceItem {
   organization: string;
   role: string;
   period: string;
-  location: string;
   description: string[];
+  location?: string;
   color: "primary" | "secondary" | "accent" | "warm";
 }
 
 const experiences: ExperienceItem[] = [
   {
     organization: "NeuroVision AI Tech",
-    role: "Research Fellow - NeuroConnect Team",
+    role: "Volunteer Research Fellow - NeuroConnect Team",
     period: "October 2025 - Present",
-    location: "Remote",
     description: [
       "Developing machine learning techniques for autism biomarker discovery using fMRI/EEG data",
       "Creating normative models to analyze complex neuroimaging data for hidden neural signatures",
@@ -27,7 +26,6 @@ const experiences: ExperienceItem[] = [
     organization: "IBM",
     role: "Qiskit Advocate",
     period: "September 2025 - Present",
-    location: "Remote",
     description: [
       "Implementing quantum algorithms for financial portfolio optimization using Qiskit (QAMP)",
       "Researching quantum computing applications in quantitative finance",
@@ -39,7 +37,6 @@ const experiences: ExperienceItem[] = [
     organization: "Girls in Quantum",
     role: "Ambassador | Research & Outreach Teams",
     period: "September 2025 - Present",
-    location: "Remote",
     description: [
       "Designing academic materials and research guides on quantum computing",
       "Collaborating on partnership projects and global initiatives",
@@ -51,7 +48,6 @@ const experiences: ExperienceItem[] = [
     organization: "Harvard SEAS",
     role: "HUVTSP Intern",
     period: "June 2025 - July 2025",
-    location: "Remote",
     description: [
       "Selected with full scholarship for invite-only Harvard Undergraduate Ventures-TECH Summer Program",
       "Engaged in venture creation, product strategy, and daily workshops",
@@ -63,7 +59,6 @@ const experiences: ExperienceItem[] = [
     organization: "WISER & WOMANIUM",
     role: "Quantum Computing Scholar",
     period: "2025",
-    location: "Remote",
     description: [
       "Intensive, multi-module program focused on theory and application of quantum algorithms, offered in collaboration with QWorld, PennyLane, and Xanadu",
       "Completed advanced curriculum covering quantum foundations, algorithms for PDEs and nonlinear problems, block encoding (LCU), and Hamiltonian simulation",
@@ -158,10 +153,12 @@ export const Experience = () => {
                               <Calendar className="w-4 h-4" />
                               <span>{exp.period}</span>
                             </div>
-                            <div className="flex items-center gap-1">
-                              <MapPin className="w-4 h-4" />
-                              <span>{exp.location}</span>
-                            </div>
+                            {exp.location && (
+                              <div className="flex items-center gap-1">
+                                <MapPin className="w-4 h-4" />
+                                <span>{exp.location}</span>
+                              </div>
+                            )}
                           </div>
 
                           <ul className="space-y-2">

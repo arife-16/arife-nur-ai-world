@@ -49,8 +49,8 @@ export const Projects = () => {
                 </div>
 
                 <p className="text-foreground/80 leading-relaxed">
-                  Comprehensive 5-phase research pipeline for objective autism diagnosis using normative 
-                  modeling on multimodal neuroimaging data. Analyzing ABIDE I & II (2,000+ subjects) to 
+                  A project for objective autism diagnosis using normative 
+                  modeling on multimodal neuroimaging data. Analyzing brain connectivity patterns to 
                   identify neural signatures and create interpretable deviation maps for clinical classification.
                 </p>
 
@@ -130,9 +130,7 @@ export const Projects = () => {
                 </div>
 
                 <p className="text-foreground/80 leading-relaxed">
-                  10-week strategic roadmap implementing ADAPT-QAOA with XY-mixers, warm-starting, and 
-                  CVaR objective for NISQ-era portfolio optimization. Targeting Mean-Variance Optimization, 
-                  MAD, and transaction cost models on quantum hardware.
+                  project aims to implement a quantum approach to this classic financial problem by framing it as a combinatorial optimization task and solving it using the Quantum Approximate Optimization Algorithm (QAOA). We will focus on the mean-variance optimization model, a cornerstone of computational finance.
                 </p>
 
                 <div className="space-y-3">

@@ -30,9 +30,6 @@ export const About = () => {
                     I am a researcher and developer driven to find the "mathematical language" hidden within the world's most complex systems. My work focuses on applying rigorous computational methods to solve deep biological and human-centric problems.
                   </p>
                   <p>
-                    My autistic mind was overwhelmed by the noise and unpredictability around me. Numbers and patterns became a way to make sense of it. While the world outside changed without warning, numbers followed rules I could trust. Writing on a blackboard was a small way to reclaim order when nothing else felt stable.
-                  </p>
-                  <p>
                     My core mission is to build tools that move beyond broad, "crude" labels to see the individual. This passion stems from my own experience and the conviction that to truly help people, we must first understand their unique biology.
                   </p>
                   <p>
