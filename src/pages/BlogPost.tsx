@@ -27,8 +27,6 @@ interface BlogPostContent {
   id: string;
   title: string;
   category: string;
-  date: string;
-  readTime: string;
   tags: string[];
   content: string[];
 }
@@ -61,8 +59,6 @@ const blogContent: Record<string, BlogPostContent> = {
     id: "neurodx-teknofest",
     title: "NeuroDx: TEKNOFEST Finalist Presentation (9th Place)",
     category: "Neuroscience",
-    date: "2025-01-20",
-    readTime: "3 min view",
     tags: ["TEKNOFEST", "NeuroDx", "Presentation", "Finalist"],
     content: [
       "Showcase of my TEKNOFEST International Science and Tech Festival finalist presentation (NeuroDx), awarded 9th place.",
@@ -87,8 +83,6 @@ const blogContent: Record<string, BlogPostContent> = {
     id: "qubo-posters",
     title: "QUBO Formulation: Poster Gallery",
     category: "Quantum Computing",
-    date: "2025-01-18",
-    readTime: "2 min view",
     tags: ["QUBO", "Quantum", "Posters"],
     content: [
       "IMAGE:QUBO/1.png",
@@ -100,8 +94,6 @@ const blogContent: Record<string, BlogPostContent> = {
     id: "research-journey",
     title: "My Journey into Quantum Computing and Neuroscience",
     category: "Personal",
-    date: "2024-11-25",
-    readTime: "6 min read",
     tags: ["Personal", "Quantum Computing", "Neuroscience", "Autism", "Leadership"],
     content: [
       "My Journey into Quantum Computing and Neuroscience",
@@ -127,8 +119,6 @@ const blogContent: Record<string, BlogPostContent> = {
     id: "information-theory",
     title: "Information Theory: The Mathematics of Uncertainty",
     category: "Information Theory",
-    date: "2025-11-10",
-    readTime: "7 min read",
     tags: ["Entropy", "Shannon", "Probability", "MaxEnt"],
     content: [
       "## Information Theory: The Mathematics of Uncertainty",

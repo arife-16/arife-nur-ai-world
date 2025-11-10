@@ -9,8 +9,6 @@ interface BlogPost {
   title: string;
   excerpt: string;
   category: string;
-  date: string;
-  readTime: string;
   tags: string[];
 }
 
@@ -20,8 +18,6 @@ const blogPosts: BlogPost[] = [
     title: "NeuroDx: TEKNOFEST Finalist Presentation (9th Place)",
     excerpt: "Showcase of my TEKNOFEST International Science and Tech Festival finalist presentation; awarded 9th place.",
     category: "Neuroscience",
-    date: "2025-01-20",
-    readTime: "3 min view",
     tags: ["TEKNOFEST", "NeuroDx", "Presentation", "Finalist"]
   },
   {
@@ -29,8 +25,6 @@ const blogPosts: BlogPost[] = [
     title: "QUBO Formulation: Poster Gallery",
     excerpt: "Three visual posters summarizing QUBO concepts and quantum methods.",
     category: "Quantum Computing",
-    date: "2025-01-18",
-    readTime: "2 min view",
     tags: ["QUBO", "Quantum", "Posters"]
   },
   {
@@ -38,8 +32,6 @@ const blogPosts: BlogPost[] = [
     title: "My Journey into Quantum Computing and Neuroscience",
     excerpt: "A personal story of finding order in complexity and how it led me to quantum computing and neuroscience.",
     category: "Personal",
-    date: "2024-11-25",
-    readTime: "6 min read",
     tags: ["Personal", "Research", "Career"]
   },
   {
@@ -47,8 +39,6 @@ const blogPosts: BlogPost[] = [
     title: "Information Theory: The Mathematics of Uncertainty",
     excerpt: "An intuitive walkthrough of bits, entropy, and the MaxEnt principle.",
     category: "Information Theory",
-    date: "2025-11-10",
-    readTime: "7 min read",
     tags: ["Entropy", "Shannon", "Probability", "MaxEnt"]
   }
 ];
