@@ -14,6 +14,13 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "qamp-presentation",
+    title: "Qiskit Advocate Mentorship Program: QAMP Presentation",
+    excerpt: "Presentation slides from the Qiskit Advocate Mentorship Program (QAMP).",
+    category: "Quantum Computing",
+    tags: ["Qiskit", "QAMP", "Mentorship", "Presentation"]
+  },
+  {
     id: "neurodx-teknofest",
     title: "NeuroDx: TEKNOFEST Finalist Presentation (9th Place)",
     excerpt: "Showcase of my TEKNOFEST International Science and Tech Festival finalist presentation; awarded 9th place.",

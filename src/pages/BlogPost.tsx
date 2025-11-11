@@ -22,6 +22,14 @@ import tf12 from "../../teknofest/neuroDx final sunum_page-0012.jpg";
 import tf13 from "../../teknofest/neuroDx final sunum_page-0013.jpg";
 import tf14 from "../../teknofest/neuroDx final sunum_page-0014.jpg";
 import tf15 from "../../teknofest/neuroDx final sunum_page-0015.jpg";
+import qamp1 from "../../QAMP/QAMP_Checkpoint1_page-0001.jpg";
+import qamp2 from "../../QAMP/QAMP_Checkpoint1_page-0002.jpg";
+import qamp3 from "../../QAMP/QAMP_Checkpoint1_page-0003.jpg";
+import qamp4 from "../../QAMP/QAMP_Checkpoint1_page-0004.jpg";
+import qamp5 from "../../QAMP/QAMP_Checkpoint1_page-0005.jpg";
+import qamp6 from "../../QAMP/QAMP_Checkpoint1_page-0006.jpg";
+import qamp7 from "../../QAMP/QAMP_Checkpoint1_page-0007.jpg";
+import qamp8 from "../../QAMP/QAMP_Checkpoint1_page-0008.jpg";
 
 interface BlogPostContent {
   id: string;
@@ -50,11 +58,36 @@ const imageMap: Record<string, string> = {
   "TEKNOFEST-13": tf13,
   "TEKNOFEST-14": tf14,
   "TEKNOFEST-15": tf15,
+  "QAMP-01": qamp1,
+  "QAMP-02": qamp2,
+  "QAMP-03": qamp3,
+  "QAMP-04": qamp4,
+  "QAMP-05": qamp5,
+  "QAMP-06": qamp6,
+  "QAMP-07": qamp7,
+  "QAMP-08": qamp8,
 };
 
 
 
 const blogContent: Record<string, BlogPostContent> = {
+  "qamp-presentation": {
+    id: "qamp-presentation",
+    title: "Qiskit Advocate Mentorship Program: QAMP Presentation",
+    category: "Quantum Computing",
+    tags: ["QAMP", "Qiskit", "Mentorship", "Presentation"],
+    content: [
+      "Presentation gallery from the Qiskit Advocate Mentorship Program (QAMP).",
+      "IMAGE:QAMP-01",
+      "IMAGE:QAMP-02",
+      "IMAGE:QAMP-03",
+      "IMAGE:QAMP-04",
+      "IMAGE:QAMP-05",
+      "IMAGE:QAMP-06",
+      "IMAGE:QAMP-07",
+      "IMAGE:QAMP-08",
+    ],
+  },
   "neurodx-teknofest": {
     id: "neurodx-teknofest",
     title: "NeuroDx: TEKNOFEST Finalist Presentation (9th Place)",
@@ -103,7 +136,7 @@ const blogContent: Record<string, BlogPostContent> = {
       "My entire life has been a search for patterns. My goal is to understand the world in a way that makes it less chaotic. As an autistic child raised in a war environment, I learned very early how unpredictable the world and human behavior can be. In the midst of that uncertainty, I found a sanctuary in logic. Numbers and patterns offered a sense of order when nothing else did.",
       "My journey began not in a lab, but in a classroom where my family and I were sheltered after being displaced by war. My autistic mind was overwhelmed by the noise and unpredictability of it all. In that room, I found a blackboard and a piece of chalk, and I began to do the only thing that made sense: I tried to map the chaos.",
       "For years, I saw the world this way, finding comfort in the predictable, logical rules of numbers and patterns while the world outside followed none. This instinct of finding structure in chaos is the one constant in my life. For years, I channeled it inward, believing that self-discovery was a journey I had to take alone. I was seeking a framework for understanding, but I was missing the tools. My biggest obstacle was the lack of a companion. When I felt lost, I would try to find my way by methodically calculating every possibility on my own, searching until I found an answer. I was turning my mind into a fortress.",
-      "It was during my time in science high school that the walls of that fortress began to come down. I met a friend who would later become my best friend. He didn't just influence my view of the world; he handed me a new lens through which to see it. He introduced me to the exciting possibilities within technology and entrepreneurship, inspiring me by introducing me to the fascinating world of computers and the power of this tool. While I was instinctively drawing complex shapes to try and explain what was in my head, he gave me a language to describe it: computation.",
+      "Years later, from a coincidence that shaped an entire journey, the walls of that fortress began to come down. I met a friend who would later become my best friend. He didn't just influence my view of the world; he handed me a new lens through which to see it. He introduced me to the exciting possibilities within technology and entrepreneurship, inspiring me by introducing me to the fascinating world of computers and the power of this tool. While I was instinctively drawing complex shapes to try and explain what was in my head, he gave me a language to describe it: computation.",
       "My friend's influence, however, went beyond the technical. He helped me realize that if I wanted to add real value to the world, I couldn't do it alone. He had a philosophy on leadership and passion that re-shaped my own. He shared a quote with me that captured this vision, a 'law' of leadership I've never forgotten:",
       "\"The best managers are the great individual contributors who never ever want to be a manager but the side that they have to be a manager because no one else is going to be able to do as good a job as them.\" - Steve Jobs",
       "This idea of stepping up not for power, but out of a sense of responsibility and passion struck me deeply. I finally understood that every equation, every algorithm, every theory only gains its true meaning when it's connected to a higher desire of changing our realities.",

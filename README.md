@@ -1,4 +1,4 @@
-# Arife Nur AI World
+# Arife Nur Ayaz
 
 React + Vite + TypeScript portfolio site. This README focuses on local development and publishing under GitHub.
 
