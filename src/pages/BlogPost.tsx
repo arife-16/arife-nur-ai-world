@@ -71,21 +71,6 @@ const imageMap: Record<string, string> = {
 
 
 const blogContent: Record<string, BlogPostContent> = {
-  "illusion-of-control": {
-    id: "illusion-of-control",
-    title: "Illusion of Control",
-    category: "Philosophy",
-    tags: ["Philosophy", "Cognitive Bias", "Plato", "Machiavelli"],
-    content: [
-      "\"Control is an illusion, but sometimes you need an illusion to gain control\"",
-      "A cognitive bias first extensively studied by psychologist Ellen Langer. This theory posits that individuals tend to overestimate their ability to influence events, even when the outcomes are demonstrably random. From a gambler blowing on dice to a sports fan wearing a \"lucky\" jersey, these actions provide a sense of agency in situations where there is none. This self-deception, far from being a mere error in judgment, can be a crucial coping mechanism, fostering optimism, reducing anxiety, and motivating individuals to persevere in challenging circumstances. The \"illusion\" in this sense is a mental shield, a necessary fiction we tell ourselves to maintain the will to act.",
-      "This theme is powerfully explored in popular culture, most notably in the acclaimed television series Mr. Robot, where a similar line, \"Control is an illusion, but sometimes you need an illusion to gain control,\" serves as a central tenet. The protagonist, a brilliant but deeply troubled hacker, creates an alternate persona—an illusion—to wrest control from the faceless, malevolent corporations that dominate society. His struggle highlights the dual nature of such fabricated realities: they can be a source of immense power and a catalyst for change, but they also risk spiraling into delusion, detaching the individual from tangible reality and leading to unforeseen, destructive consequences.",
-      "In the imagery of Plato's \"Allegory of the Cave.\" The prisoners, chained and facing a wall, mistake the flickering shadows for reality. Their \"control\" over their perceived world is entirely based on an illusion orchestrated by unseen forces. To gain true control, a prisoner must break free and ascend into the light of knowledge, a painful and disorienting process. In this context, the initial \"illusion\" is a form of subjugation, a manufactured reality designed to maintain order and prevent questioning. However, one could argue that even the philosopher who escapes must create a new \"illusion\" or framework of understanding to make sense of the dazzling, complex reality outside the cave.",
-      "This notion of manufactured reality for the purpose of control is a cornerstone of political philosophy, most starkly articulated by Niccolò Machiavelli in The Prince. Machiavelli advises rulers that the appearance of virtue and strength is often more important than the reality. A prince must be a \"great pretender and dissembler,\" using illusion and spectacle to manage the perceptions of the populace and maintain his grip on power. This cynical, yet arguably pragmatic, approach suggests that on a societal scale, illusions are not merely individual coping mechanisms but essential tools of governance and social cohesion.",
-      "History provides numerous examples of this principle in action. The \"divine right of kings\" was a powerful illusion that legitimized monarchical rule for centuries, casting the king as God's chosen representative on Earth and thus beyond reproach. In more modern times, propaganda and the carefully curated public image of political leaders serve a similar purpose, crafting a narrative that simplifies complex realities and fosters a sense of security and shared purpose, thereby consolidating control.",
-      "In essence, the statement \"Sometimes we need illusion to get control\" acts as a powerful lens through which to examine the human condition. It reveals a fundamental tension: our yearning for truth and authenticity on one hand, and our pragmatic need for order and a sense of command on the other. It suggests that control is not always a matter of direct, physical influence, but often a product of the stories we tell ourselves and the realities we choose to inhabit. Whether this is a necessary adaptation for survival or a dangerous path to self-deception remains a profound and enduring question. The quote leaves us to ponder the fine line between the illusions that empower us and those that ultimately imprison us.",
-    ],
-  },
   "qamp-presentation": {
     id: "qamp-presentation",
     title: "Qiskit Advocate Mentorship Program: QAMP Presentation",
@@ -136,31 +121,6 @@ const blogContent: Record<string, BlogPostContent> = {
       "IMAGE:QUBO/1.png",
       "IMAGE:QUBO/2.png",
       "IMAGE:QUBO/3.png",
-    ],
-  },
-  "research-journey": {
-    id: "research-journey",
-    title: "My Journey into Quantum Computing and Neuroscience",
-    category: "Personal",
-    tags: ["Personal", "Quantum Computing", "Neuroscience", "Autism", "Leadership"],
-    content: [
-      "My Journey into Quantum Computing and Neuroscience",
-      "On my website, I list two fields that at first glance seem to be worlds apart: quantum computing and computational neuroscience. One is the physics of the impossibly small, a world built on probability and uncertainty. The other is the science of the human mind, the most complex biological system we know.",
-      "But to me, they are not separate. They are two destinations on the same map, part of one long, continuous search to understand how order emerges in complex worlds, whether physical or human. This blog post is about that journey, a path that started in chaos and was given direction by a pivotal friendship.",
-      "## The Search for Order",
-      "My entire life has been a search for patterns. My goal is to understand the world in a way that makes it less chaotic. As an autistic child raised in a war environment, I learned very early how unpredictable the world and human behavior can be. In the midst of that uncertainty, I found a sanctuary in logic. Numbers and patterns offered a sense of order when nothing else did.",
-      "My journey began not in a lab, but in a classroom where my family and I were sheltered after being displaced by war. My autistic mind was overwhelmed by the noise and unpredictability of it all. In that room, I found a blackboard and a piece of chalk, and I began to do the only thing that made sense: I tried to map the chaos.",
-      "For years, I saw the world this way, finding comfort in the predictable, logical rules of numbers and patterns while the world outside followed none. This instinct of finding structure in chaos is the one constant in my life. For years, I channeled it inward, believing that self-discovery was a journey I had to take alone. I was seeking a framework for understanding, but I was missing the tools. My biggest obstacle was the lack of a companion. When I felt lost, I would try to find my way by methodically calculating every possibility on my own, searching until I found an answer. I was turning my mind into a fortress.",
-      "Years later, from a coincidence that shaped an entire journey, the walls of that fortress began to come down. I met a friend who would later become my best friend. He didn't just influence my view of the world; he handed me a new lens through which to see it. He introduced me to the exciting possibilities within technology and entrepreneurship, inspiring me by introducing me to the fascinating world of computers and the power of this tool. While I was instinctively drawing complex shapes to try and explain what was in my head, he gave me a language to describe it: computation.",
-      "My friend's influence, however, went beyond the technical. He helped me realize that if I wanted to add real value to the world, I couldn't do it alone. He had a philosophy on leadership and passion that re-shaped my own. He shared a quote with me that captured this vision, a 'law' of leadership I've never forgotten:",
-      "\"The best managers are the great individual contributors who never ever want to be a manager but the side that they have to be a manager because no one else is going to be able to do as good a job as them.\" - Steve Jobs",
-      "This idea of stepping up not for power, but out of a sense of responsibility and passion struck me deeply. I finally understood that every equation, every algorithm, every theory only gains its true meaning when it's connected to a higher desire of changing our realities.",
-      "This quest led me to the frontiers of quantum computing and artificial intelligence systems, where these fields perfectly reflect the way my mind processes the world. The classical logic demands absolute certainty, while quantum systems embrace the power of probability. In this same vision, human decision-making is often disrupted by noise, while artificial intelligence seeks to find clear patterns in the data.",
-      "These fields, which I now explore as a Qiskit Advocate and researcher, are the ultimate expression of my search. It is a system that asks for precision without pretending that everything can be known. At the same time, my friend's insights into human nature and my own autistic mind pushed me down a parallel path. I have always synthesized concepts, mapping abstract ideas into words, phrases, and even colors in my mind.",
-      "What if I could use the same computational tools to understand that process?",
-      "This led me to neuroscience. I am now a research fellow working to discover biomarkers for autism, developing machine learning techniques to analyze complex neuroimaging data. In a way, I am trying to build the objective, computational tools to understand the very 'systems' I've been navigating my whole life.",
-      "I still love the clean line of a proof, but I’m no longer chasing certainty. The chalk, the code, the experiments, and the people I’ve met all form one continuous line of inquiry. Each step has been a way of learning how to think clearly when the world is not. That is the habit I carry forward: to make sense of complexity, to keep improving the systems that help others see more clearly, and then handing the chalk to the next person.",
-      "It is a search that began with an internal need for order, was given a critical spark by a friend who taught me how to model the world, and continues today as I use these tools to make sense of complexity.",
     ],
   },
   "information-theory": {

@@ -14,13 +14,6 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    id: "illusion-of-control",
-    title: "Illusion of Control",
-    excerpt: "A reflection on the psychology of control, cultural narratives, and political philosophy.",
-    category: "Philosophy",
-    tags: ["Philosophy", "Cognitive Bias", "Mr. Robot", "Plato", "Machiavelli"]
-  },
-  {
     id: "qamp-presentation",
     title: "Qiskit Advocate Mentorship Program: QAMP Presentation",
     excerpt: "Presentation slides from the Qiskit Advocate Mentorship Program (QAMP).",
@@ -40,13 +33,6 @@ const blogPosts: BlogPost[] = [
     excerpt: "Three visual posters summarizing QUBO concepts and quantum methods.",
     category: "Quantum Computing",
     tags: ["QUBO", "Quantum", "Posters"]
-  },
-  {
-    id: "research-journey",
-    title: "My Journey into Quantum Computing and Neuroscience",
-    excerpt: "A personal story of finding order in complexity and how it led me to quantum computing and neuroscience.",
-    category: "Personal",
-    tags: ["Personal", "Research", "Career"]
   },
   {
     id: "information-theory",
