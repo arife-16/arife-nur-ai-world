@@ -14,6 +14,13 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "illusion-of-control",
+    title: "Illusion of Control",
+    excerpt: "A reflection on the psychology of control, cultural narratives, and political philosophy.",
+    category: "Philosophy",
+    tags: ["Philosophy", "Cognitive Bias", "Mr. Robot", "Plato", "Machiavelli"]
+  },
+  {
     id: "qamp-presentation",
     title: "Qiskit Advocate Mentorship Program: QAMP Presentation",
     excerpt: "Presentation slides from the Qiskit Advocate Mentorship Program (QAMP).",
